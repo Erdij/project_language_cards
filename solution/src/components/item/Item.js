@@ -3,6 +3,11 @@ import React, { useState } from "react";
 
 const Item = ({ card }) => {
   const [showLogo, setShowLogo] = useState(true);
+   if (!showLogo) {
+    setTimeout(() => {
+      setShowLogo(true);
+    }, 5000);
+  }
   return (
     <div className="card" onClick={() => setShowLogo(!showLogo)}>
       {showLogo ? (
