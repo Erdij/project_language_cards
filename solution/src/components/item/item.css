@@ -23,3 +23,10 @@
   text-align: center;
   font-size: 1rem;
 }
+.list {
+  text-align: left;
+  font-size: 0.9rem;
+  font-weight: 500;
+  list-style-position: outside;
+  padding-left: 15px;
+}
